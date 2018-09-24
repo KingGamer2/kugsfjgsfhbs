@@ -580,7 +580,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "{King_Bot}."
+          text: "{هيرو ميوزك}."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -647,7 +647,7 @@ client.on('message', message => { //bot
                                     .setAuthor(client.user.username,client.user.avatarURL)
                                     .setThumbnail(client.user.avatarURL)
                                     .setColor('RANDOM')
-                                    .setTitle('``KinG BoT`` ')
+                                    .setTitle('`هيرو ميوزك`` ')
                                     .addField('``البنق🚀``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
                                     .addField('``استخدام الذاكرة ``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
                                     .addField('``السيرفرات🌐``', [client.guilds.size], true)
@@ -717,7 +717,7 @@ client.on('message', message => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("معلومات عن الحــساب")
-               .setFooter(`{King_Bot}.`, '')
+               .setFooter(`{هيرو ميوزك}.`, '')
   .setColor("#9B59B6")
   .addField("اســـم الحســاب", `${message.author.username}`)
   .addField('كود الحساب الخاص', message.author.discriminator)
@@ -2411,7 +2411,7 @@ client.on('message', function(message) {
 });
 
 client.on('message', function(message) {
-	const myID = "484106911696945153";
+	const myID = "400451035958738955";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(adminprefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -2424,7 +2424,7 @@ client.on('message', function(message) {
     } else if(message.content.startsWith(adminprefix + "stream")) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
-        client.user.setGame(args , 'https://twitch.tv/6xlez1');
+        client.user.setGame(args , 'https://www.youtube.com/kinggamer_th3');
         message.channel.send(':white_check_mark: Done!').then(msg => {
            msg.delete(5000);
           message.delete(5000);
@@ -2473,7 +2473,7 @@ client.on('message', function(message) {
 
   client.on('message',async message => {
     if(message.content.startsWith(adminprefix + "restart")) {
-        if(message.author.id !== "484106911696945153") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "400451035958738955") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Restarting.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Restarting..**');
